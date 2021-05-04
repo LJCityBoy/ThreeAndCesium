@@ -131,13 +131,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anncwb/vue-vben-admin.git"
+    "url": "git+https://github.com/LJCityBoy/ThreeAndCesium.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anncwb/vue-vben-admin/issues"
+    "url": "https://github.com/LJCityBoy/ThreeAndCesium/issues"
   },
-  "homepage": "https://github.com/anncwb/vue-vben-admin",
+  "homepage": "https://github.com/LJCityBoy/ThreeAndCesium",
   "engines": {
     "node": "^12 || >=14"
   }
