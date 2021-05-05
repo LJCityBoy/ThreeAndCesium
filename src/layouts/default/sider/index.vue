@@ -1,4 +1,5 @@
 <template>
+  <!-- 手机等小屏幕下 -->
   <Drawer
     v-if="getIsMobile"
     placement="left"
@@ -10,15 +11,17 @@
   >
     <Sider />
   </Drawer>
+  <!-- mix屏幕下 -->
   <MixSider v-else-if="getIsMixSidebar" />
+  <!-- 其他屏幕 -->
   <Sider v-else />
 </template>
 <script lang="ts">
   import { defineComponent } from 'vue';
 
-  import Sider from './LayoutSider.vue';
-  import MixSider from './MixSider.vue';
-  import { Drawer } from 'ant-design-vue';
+  import Sider from './LayoutSider.vue'; //大屏
+  import MixSider from './MixSider.vue'; //其他屏幕
+  import { Drawer } from 'ant-design-vue'; //手机等小屏幕
 
   import { useAppInject } from '/@/hooks/web/useAppInject';
   import { useMenuSetting } from '/@/hooks/setting/useMenuSetting';

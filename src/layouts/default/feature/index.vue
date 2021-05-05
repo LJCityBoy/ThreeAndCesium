@@ -13,7 +13,7 @@
     name: 'LayoutFeatures',
     components: {
       BackTop,
-      LayoutLockPage: createAsyncComponent(() => import('/@/views/sys/lock/index.vue')),
+      LayoutLockPage: createAsyncComponent(() => import('/@/views/sys/lock/index.vue')), //锁屏界面
       SettingDrawer: createAsyncComponent(() => import('/@/layouts/default/setting/index.vue')),
     },
     setup() {
