@@ -25,6 +25,7 @@
     props: {
       event: {
         type: Number as PropType<HandlerEnum>,
+        default: () => {},
       },
       disabled: {
         type: Boolean,

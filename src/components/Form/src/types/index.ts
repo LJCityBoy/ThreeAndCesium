@@ -108,5 +108,4 @@ export type ComponentType =
   | 'StrengthMeter'
   | 'Upload'
   | 'IconPicker'
-  | 'Render'
-  | 'Slider';
+  | 'Render';

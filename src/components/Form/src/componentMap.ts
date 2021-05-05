@@ -16,7 +16,6 @@ import {
   Switch,
   TimePicker,
   TreeSelect,
-  Slider
 } from 'ant-design-vue';
 
 import RadioButtonGroup from './components/RadioButtonGroup.vue';
@@ -45,7 +44,6 @@ componentMap.set('RadioGroup', Radio.Group);
 componentMap.set('Checkbox', Checkbox);
 componentMap.set('CheckboxGroup', Checkbox.Group);
 componentMap.set('Cascader', Cascader);
-componentMap.set('Slider', Slider);
 
 componentMap.set('DatePicker', DatePicker);
 componentMap.set('MonthPicker', DatePicker.MonthPicker);

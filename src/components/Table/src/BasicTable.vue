@@ -331,7 +331,6 @@
       border-radius: 2px;
 
       .ant-table-title {
-        min-height: 40px;
         padding: 0 0 8px 0 !important;
       }
 

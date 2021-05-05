@@ -35,6 +35,7 @@
       },
       event: {
         type: Number as PropType<HandlerEnum>,
+        default: () => {},
       },
       def: {
         type: String,

@@ -35,7 +35,17 @@
   import type { AdvanceState } from './types/hooks';
   import type { CSSProperties, Ref } from 'vue';
 
-  import { defineComponent, reactive, ref, computed, unref, onMounted, watch, nextTick } from 'vue';
+  import {
+    defineComponent,
+    reactive,
+    ref,
+    computed,
+    unref,
+    onMounted,
+    watch,
+    toRefs,
+    nextTick,
+  } from 'vue';
   import { Form, Row } from 'ant-design-vue';
   import FormItem from './components/FormItem.vue';
   import FormAction from './components/FormAction.vue';
@@ -133,8 +143,13 @@
         defaultValueRef,
       });
 
+      const { transformDateFunc, fieldMapToTime, autoFocusFirstItem } = toRefs(
+        unref(getProps)
+      ) as any;
+
       const { handleFormValues, initDefault } = useFormValues({
-        getProps,
+        transformDateFuncRef: transformDateFunc,
+        fieldMapToTimeRef: fieldMapToTime,
         defaultValueRef,
         getSchema,
         formModel,
@@ -142,7 +157,7 @@
 
       useAutoFocus({
         getSchema,
-        getProps,
+        autoFocusFirstItem,
         isInitedDefault: isInitedDefaultRef,
         formElRef: formElRef as Ref<FormActionType>,
       });
