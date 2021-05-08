@@ -1,48 +1,19 @@
 <template>
   <div class="content">
-    <div id="cesiumView"></div>
+    <card-list />
   </div>
 </template>
 
-<script>
+<script lang="ts">
   import { defineComponent, onMounted } from 'vue';
-  import { Viewer } from 'cesium';
-  // import * as Cesium from '/@/Build/Cesium/Cesium.js';
+  import CardList from '../components/CardList.vue';
 
   export default defineComponent({
+    components: { CardList },
     setup() {
-      // const cesiumView = ref();
-      const initViewer = () => {
-        const viewer = new Viewer('cesiumView', {
-          geocoder: false,
-          homeButton: false,
-          sceneModePicker: false,
-          baseLayerPicker: false,
-          navigationHelpButton: false,
-          animation: false,
-          timeline: false,
-          fullscreenButton: false,
-          vrButton: false,
-          infoBox: false,
-          shouldAnimate: true,
-          selectionIndicator: false,
-          clampToGround: true,
-          baseLayerPicker: false,
-          requestWaterMask: true,
-          requestVertexNormals: true,
-        });
-        viewer._cesiumWidget._creditContainer.style.display = 'none';
-      };
-      onMounted(() => {
-        initViewer();
-      });
+      onMounted(() => {});
+
+      return {};
     },
   });
 </script>
-<style lang="less" scoped>
-  .content,
-  #cesiumView {
-    width: 100%;
-    height: 100%;
-  }
-</style>

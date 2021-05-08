@@ -1,6 +1,6 @@
 import '/@/design/index.less';
 import 'virtual:windi.css';
-import '/@/Build/Cesium/Widgets/widgets.css';
+// import '/@/Build/Cesium/Widgets/widgets.css';
 
 import { createApp } from 'vue';
 import App from './App.vue';

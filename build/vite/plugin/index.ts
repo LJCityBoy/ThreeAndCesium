@@ -17,7 +17,7 @@ import { configImageminPlugin } from './imagemin';
 import { configWindiCssPlugin } from './windicss';
 import { configSvgIconsPlugin } from './svgSprite';
 import { configHmrPlugin } from './hmr';
-import cesium from 'vite-plugin-cesium';
+// import cesium from 'vite-plugin-cesium';
 
 export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
   const {
@@ -34,7 +34,7 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
     // have to
     vueJsx(),
     //增加cesium
-    cesium(),
+    // cesium(),
   ];
 
   // TODO

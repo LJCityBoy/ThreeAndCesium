@@ -19,8 +19,8 @@ router.post('/login', (ctx) => {
     success: true,
     result: {
       userId: '1',
-      username: 'vben',
-      realName: 'Vben Admin',
+      username: 'cityboy2',
+      realName: 'LJCityBoy',
       desc: 'manager',
       password: '123456',
       token: 'fakeToken1',
@@ -40,8 +40,8 @@ router.get('/getUserInfoById', (ctx) => {
     success: true,
     result: {
       userId: '1',
-      username: 'vben',
-      realName: 'Vben Admin',
+      username: 'cityboy',
+      realName: 'LJCityBoy',
       desc: 'manager',
       password: '123456',
       token: 'fakeToken1',

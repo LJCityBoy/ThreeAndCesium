@@ -94,3 +94,5 @@ npm build
 ## 维护者
 
 [@LJCityBoy](https://github.com/LJCityBoy)
+
+* 由于本人不懂得怎么在vite项目中配置cesium资源，所以临时的将cesium包放在public目录下将就用着，等哪位大神帮我解决这个问题后在做处理
