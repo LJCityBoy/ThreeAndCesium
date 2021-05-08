@@ -4,4 +4,5 @@ export default {
   test: 'Test',
   workbench: 'Workbench',
   analysis: 'Analysis',
+  cesium: 'CesiumExample',
 };

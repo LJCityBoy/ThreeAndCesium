@@ -5,7 +5,7 @@ const cesium: MenuModule = {
   orderNo: 11,
   menu: {
     path: '/cesium',
-    name: t('routes.cesium.cesium'),
+    name: t('routes.dashboard.cesium'),
     children: [
       {
         path: 'primary', //初级
