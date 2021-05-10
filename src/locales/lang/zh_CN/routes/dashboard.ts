@@ -5,6 +5,8 @@ export default {
   analysis: '分析页',
   cesium: 'Cesium案例',
   primary: 'cesium入门',
+  showCesium: 'HELLO Cesium',
+  entityDraw: '绘制',
   intermediate: 'cesium中级',
   advanced: 'cesium进阶',
 };

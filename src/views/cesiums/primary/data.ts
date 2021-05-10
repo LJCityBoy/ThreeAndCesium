@@ -4,19 +4,26 @@ export interface ListCardItem {
   title: string; //标题
   icon?: string; //图标
   description?: string; //描述
-  content: string;
+  routerTo: string;
+  imgsrc?: string;
 }
-const listCardItem: Array<ListCardItem> = [];
-for (let i = 0; i < 23; i++) {
-  listCardItem.push({
-    href: 'https://www.antdv.com/',
-    title: `ant design vue part ${i}`,
+const listCardItem: Array<ListCardItem> = [
+  {
+    href: '',
+    title: 'HELLO Cesium',
     avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  });
-}
+    imgsrc: 'https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png',
+    description: '在vue3中展示Cesium的地球，并隐藏相关官方按钮简单示例,效果请看详情。',
+    routerTo: '/cesium/primary/showCesium',
+  },
+  {
+    href: '',
+    title: '绘制各种形状',
+    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    imgsrc: 'https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png',
+    description: '一些绘制简单形状的方法，Entity、CZML方式添加简单形状的方法。',
+    routerTo: '/cesium/primary/entityDraw',
+  },
+];
 
 export const listCardItems: ListCardItem[] = listCardItem;
