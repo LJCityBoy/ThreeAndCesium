@@ -1,10 +1,10 @@
 {
-    "name": "vben-admin",
+    "name": "threeandcesium",
     "version": "2.3.0",
     "author": {
-        "name": "vben",
-        "email": "anncwb@126.com",
-        "url": "https://github.com/anncwb"
+        "name": "LJCityBoy",
+        "email": "1334417517@qq.com",
+        "url": "https://github.com/LJCityBoy/ThreeAndCesium"
     },
     "scripts": {
         "bootstrap": "yarn install",
@@ -33,6 +33,7 @@
     },
     "dependencies": {
         "@iconify/iconify": "^2.0.0-rc.6",
+        "@types/cesium": "^1.67.13",
         "@vueuse/core": "^4.9.0",
         "@zxcvbn-ts/core": "^0.3.0",
         "ant-design-vue": "^2.1.2",

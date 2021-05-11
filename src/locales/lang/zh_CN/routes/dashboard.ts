@@ -7,6 +7,7 @@ export default {
   primary: 'cesium入门',
   showCesium: 'HELLO Cesium',
   entityDraw: '绘制',
+  skybox: '天空盒',
   intermediate: 'cesium中级',
   advanced: 'cesium进阶',
 };

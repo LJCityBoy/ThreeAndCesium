@@ -28,8 +28,19 @@
           clampToGround: true,
           requestWaterMask: true,
           requestVertexNormals: true,
+          //官方世界地形
+          terrainProvider: Cesium.createWorldTerrain(),
         });
         viewer._cesiumWidget._creditContainer.style.display = 'none';
+        //开启地形深度检测
+        viewer.scene.globe.depthTestAgainstTerrain = true;
+        // //vr地形
+        // const vrTheWorldProvider = new Cesium.VRTheWorldTerrainProvider({
+        //   url: 'http://www.vr-theworld.com/vr-theworld/tiles1.0.0/73/',
+        //   credit: 'Terrain data courtesy VT MÄK',
+        // });
+        // //切换地形生效：
+        // viewer.terrainProvider = vrTheWorldProvider;
       };
       onMounted(() => {
         initViewer();

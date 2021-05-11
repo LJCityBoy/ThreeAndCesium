@@ -24,6 +24,14 @@ const listCardItem: Array<ListCardItem> = [
     description: '一些绘制简单形状的方法，Entity、CZML方式添加简单形状的方法。',
     routerTo: '/cesium/primary/entityDraw',
   },
+  {
+    href: '',
+    title: '自定义天空盒子',
+    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    imgsrc: 'https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png',
+    description: '自定义天空盒，背景图，隐藏地球，月亮，太阳光。。。',
+    routerTo: '/cesium/primary/skybox',
+  },
 ];
 
 export const listCardItems: ListCardItem[] = listCardItem;

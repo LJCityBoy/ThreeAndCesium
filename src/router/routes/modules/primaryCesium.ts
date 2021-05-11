@@ -25,4 +25,14 @@ export const PrimaryCesiums = [
       hideTab: true,
     },
   },
+  {
+    path: 'skybox',
+    name: 'Skybox',
+    component: () => import('/@/views/cesiums/primary/skybox.vue'),
+    meta: {
+      currentActiveMenu: '/cesium/primary',
+      title: t('routes.dashboard.skybox'),
+      hideTab: true,
+    },
+  },
 ];
