@@ -5,4 +5,5 @@ export default {
   workbench: 'Workbench',
   analysis: 'Analysis',
   cesium: 'CesiumExample',
+  openglobus: 'OpenGlobus应用',
 };

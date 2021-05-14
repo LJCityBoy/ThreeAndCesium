@@ -10,4 +10,6 @@ export default {
   skybox: '天空盒',
   intermediate: 'cesium中级',
   advanced: 'cesium进阶',
+  openglobus: 'OpenGlobus应用',
+  hellOpenglobus: 'hellow openglobus',
 };

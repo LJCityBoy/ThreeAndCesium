@@ -7,10 +7,11 @@
 <script lang="ts">
   import { defineComponent, onMounted } from 'vue';
   import CardList from '/@/views/components/CardList.vue';
-  import { listCardItems } from '../primary/data';
+  import { listCardItems } from './data/data.ts';
   // import router from '/@/router/index';
 
   export default defineComponent({
+    name: 'OpenGlobus',
     components: { CardList },
     setup() {
       const listClick = (item) => {
